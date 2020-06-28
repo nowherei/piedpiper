@@ -1,0 +1,75 @@
+- var menu = {'the problem' : '#problem', 'PiedPiperCoin' : '#piedPiperCoin', 'the team' : '#team'}
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= "PiperNet is Here"
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+    link(rel="stylesheet" href="css/style.css")
+  body
+    header.header
+      .container
+        .header__inner
+          a.header__logo(href="#top")
+            img(src="img/logo.png" width="184" height="45")
+          ul.header__menu.menu
+            for value, index in menu
+              li.menu__item
+                a.menu__link(href=value)= index
+    .first
+      a#top.anchor(name="top")
+      .container
+        h1.first__title PiperNet Is Here
+    .content.content_gray
+      a#problem.anchor(name="problem")
+      .container
+        h2.content__title.title The Problem
+        .content__text
+          p.
+            Beneath the flashy homepages of your favorite sites lurk Hooli™ and other evil corporations out to hoard and sell your most personal data.
+          p.
+            What was built to be the ultimate platform for the free sharing of knowledge has turned into a money-hungry monster feasting on our privacy and freedom.
+          p.
+            But fear not, for Pied Piper has the answer! And it’s simple:<br>
+            An autonomous peer-to-peer network featuring distributed storage powered by universal compression, accelerated scheduling allocation, and end-to-end encryption.
+          p.
+            Put even simpler — <b>it’s the internet, completely decentralized.</b>
+    .hero
+      .container
+        .hero__title We’re in this together! All of our computers and phones join in a network to make the strongest supercomputer the world has ever seen.
+    .content
+      a#piedPiperCoin.anchor(name="piedPiperCoin")
+      .container
+        h2.content__title.title Introducing PiedPiperCoin
+        .content__text
+          img.content__image(src="img/PPC_Logo.png" width="115" height="115")
+          p.
+            Pied Piper's new internet is built for users, by users.
+            You supply the storage, compute, and networking resources that power our entire decentralized web.
+          p.
+            Now there's a way to give credit where credit is due. Compute credit, that is! The more you share your device resources, the more PiedPiperCoin you receive.
+          p.
+            Whether you're a developer with an app ready for market, or just an Average Joe with a smartphone you'll love all you can do with PiedPiperCoin.
+    .team
+      a#team.anchor(name="team")
+      .container
+        h2.team__title.title The Team
+        .team__list
+          mixin person(image, name, position)
+            .team__person
+              img.team__photo(src=image width=168 height=168)
+              .team__name= name
+              .team__position= position
+          +person('img/person_1.png', 'Richard Hendricks', 'Founder & CEO')
+          +person('img/person_2.png', 'Dinesh Chugtai', 'Senior Programmer')
+          +person('img/person_3.png', 'Bertram Gilfoyle', 'Chief Systems Architect')
+          +person('img/person_4.png', 'Jared Dunn', 'Chief Operating Officer')
+          +person('img/person_5.png', 'Monica Hall', 'Chief Financial Officer')
+          +person('img/person_6.png', 'Nelson Bighetti', 'Majority Investor')
+
+    footer.footer
+      .container
+        p.footer__text.
+          All other trademarks and copyrights are the property of their respective owners. Use of these names, trademarks and brands does not imply endorsement.

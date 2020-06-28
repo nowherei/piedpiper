@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.header {
+  background: #007765;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 184px;
+  height: 45px;
+  padding: 20px 0;
+}
+.header__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  color: #007765;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.menu {
+  list-style: none;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+}
+.menu__link {
+  color: white;
+  text-decoration: none;
+  padding: 0 8px;
+  border-right: 2px solid #fff;
+}
+.menu__item:last-child .menu__link {
+  padding-right: 0;
+  border: none;
+}
+
+.first {
+  position: relative;
+  background: url("../img/hero_bg_1.jpg") 50% 50%;
+  background-size: cover;
+}
+.first__title {
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 160px 0;
+  margin: 0;
+  margin-top: 85px;
+}
+
+.content {
+  position: relative;
+  padding: 48px 0 92px;
+}
+.content_gray {
+  background: #EEEEEE;
+}
+.content__title {
+  margin-bottom: 16px;
+}
+.content__text p {
+  margin: 0 0 40px;
+}
+.content__text p:last-child {
+  margin: 0;
+}
+.content__image {
+  float: left;
+  margin: 0 48px 20px 0;
+}
+
+.hero {
+  background: url("../img/hero_bg_2.jpg") 50% 50%;
+  background-size: cover;
+}
+.hero__title {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 128px 108px;
+}
+
+.team {
+  position: relative;
+  background: #EEEEEE;
+  padding: 48px 0 94px;
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 32px;
+}
+.team__person {
+  text-align: center;
+  flex: 1 0 33%;
+  padding: 24px 20px 28px;
+  box-sizing: border-box;
+}
+.team__photo {
+  width: 168px;
+  height: 168px;
+}
+.team__name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+}
+.team__position {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer {
+  background: #333333;
+}
+.footer__text {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding: 48px 0 64px;
+  width: 540px;
+  margin: 0 auto;
+}
+
+.anchor {
+  top: -85px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */
